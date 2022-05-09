@@ -12,7 +12,7 @@ public class Main {
         company.employ(new Person("Dave", 34, "welder"));
         company.employ(new Person("Cameron", 29, "carpenter"));
         company.employ(new Person("Jasmin", 47, "plummer"));
-        company.employ(new Person("Dorothy", 57,"carpenter"));
+        company.employ(new Person("Dorothy", 57, "carpenter"));
         company.employ(new Person("Waldo", 39, "plummer"));
         company.employ(new Person("Martin", 29, "carpenter"));
         company.employ(new Person("Justin", 47, "manager"));

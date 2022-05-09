@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 public class Employee implements Person {
 
-    private String firstName;
+    protected String firstName;
 
-    private String lastName;
+    protected String lastName;
 
-    private LocalDate birthDay;
+    protected LocalDate birthDay;
 
-    private String address;
+    protected String address;
 
     private LocalDate dateOfEmployment;
     private String position;
@@ -22,6 +22,18 @@ public class Employee implements Person {
         this.address = address;
         this.dateOfEmployment = dateOfEmployment;
         this.position = position;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthDay=" + birthDay +
+                ", address='" + address + '\'' +
+                ", dateOfEmployment=" + dateOfEmployment +
+                ", position='" + position + '\'' +
+                '}';
     }
 
     @Override

@@ -2,7 +2,6 @@ package week1.homework4.req6;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Company {
@@ -47,11 +46,11 @@ public class Company {
 
     public void employ(Person person) {
         if (managerExists()) {
-                System.out.println("We already have a " + MANAGER);
-            } else {
-                employees.add(person);
-            }
+            System.out.println("We already have a " + MANAGER);
+        } else {
+            employees.add(person);
         }
+    }
 
     private boolean managerExists() {
         var managerCheck = employees.stream()
